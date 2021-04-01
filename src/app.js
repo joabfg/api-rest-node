@@ -1,9 +1,9 @@
-import express from 'express';
+import express from "express";
 
-import homeRoutes from './routes/homeRoutes';
+import homeRoutes from "./routes/homeRoutes";
 
 class App {
-  construtor() {
+  constructor() {
     this.app = express();
     this.middlewares();
     this.routes();
@@ -15,7 +15,8 @@ class App {
   }
 
   routes() {
-    this.app.use('/', homeRoutes);
+    this.app.use("/", homeRoutes);
   }
 }
+
 export default new App().app;

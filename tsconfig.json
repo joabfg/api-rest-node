@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,           /* Enables experimental support for ES7 decorators. */
+    "emitDecoratorMetadata": true
+  },
+  "compileOnSave": false,
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.test.ts",
+    "ormconfig.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
